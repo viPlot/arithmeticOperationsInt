@@ -3,7 +3,6 @@ public class Operations {
     public Operations(){
     }
 
-
     public void addition(int fNum, int sNum, int mod) {
         int sum = ((fNum % mod) + (sNum % mod)) % mod;
         System.out.println("> Результат сложения по модулю: " + fNum + " + " + sNum +
@@ -70,7 +69,7 @@ public class Operations {
                 " (mod " + mod + ") = " + done);
     }
 
-    public int inverse(int elem, int mod){
+    private int inverse(int elem, int mod){
         int x = 0;
         while ((elem * x) % mod != 1) {
             x++;
